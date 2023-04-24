@@ -1,0 +1,6 @@
+<h1 [ngStyle]="{backgroundColor: isAdmin ? 'red' : 'yellow'}">
+    {{isAdmin ? "Welcome" : "Please log in"}}!
+</h1>
+<button type="button">View</button>
+<button type="button" *ngIf="isAdmin">Edit</button>
+<button type="button" (click)="viewAdmin()">View/Edit</button>
